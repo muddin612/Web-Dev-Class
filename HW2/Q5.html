@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .ball {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: absolute;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+      }
+      
+      .red {
+        background-color: red;
+        top: 0;
+        left: 0;
+        animation-name: red-ball;
+        z-index: 2;
+        background: -webkit-radial-gradient(top left, white, red);
+        background: -moz-radial-gradient(top left, white, red);
+        background: radial-gradient(top left, white, red)
+      }
+      
+      .green {
+        background-color: green;
+        top: 0;
+        right: 0;
+        animation-name: green-ball;
+        z-index: 1;
+        background: -webkit-radial-gradient(top right, white, green);
+            background: -moz-radial-gradient(top right, white, green);
+            background: radial-gradient(top right, white, green)
+      }
+      
+      @keyframes red-ball {
+        0% {
+          top: 0;
+          left: 0;
+        }
+        50% {
+          top: calc(50vh - 25px);
+          left: calc(50vw - 25px);
+        }
+        100% {
+          top: calc(100vh - 50px);
+          left: calc(100vw - 50px);
+        }
+      }
+      
+      @keyframes green-ball {
+        0% {
+          top: 0;
+          right: 0;
+        }
+        50% {
+          top: calc(50vh - 25px);
+          right: calc(50vw - 25px);
+        }
+        100% {
+          top: calc(100vh - 50px);
+          right: calc(100vw - 50px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ball red"></div>
+    <div class="ball green"></div>
+  </body>
+</html>
