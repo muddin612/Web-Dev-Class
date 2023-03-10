@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <head>
-    <title>Midterm Project</title>
-    <meta charset="uft-8">
+    <title>Mohammed Uddin' Resort</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
-        .nav li {
-            float: left;
-        }
-        .nav ul{
-            height: 100px;
+        .navbar{
             list-style-type: none;
             margin: 0;
             padding: 0;
             overflow: hidden;
-            background-color: rgb(52, 110, 29);
+            background-color: rgb(40, 167, 69);
+            text-decoration: none;
         }
-        .nav li a{
+        .navbar li a{
             display: block;
             color: white;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
         }
-        .nav li a:hover{
+        .navbar li a:hover{
             background-color: #111;
         }
         footer{
@@ -33,46 +35,65 @@
             width: 100%;
             color: lightgrey;
         }
-
     </style>
-
 </head>
 <body>
-<div><h1>[group name]</h1></div>
+<div><h1>Mohamed Uddin</h1></div>
 
- <div class="nav">
-    <ul>
-        <li> <img src="comsci.png" height="50px" width="50px"></li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="yurts.html">Yurts</a></li>
-        <li><a href="activities.html">Activities</a></li>
-        <li><a href="reservation.html">Reservation</a></li>
-        <li><a href="comments.html">Comments</a></li>
-    </ul>
- </div>
+<nav class="navbar navbar-expand-md navbar-dark">
+    <a class="navbar-brand" href="index.html">
+        <img src="comsci.png" alt="logo" height="50px">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="yurts.html">Yurts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="activities.html">Activities</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="reservation.html">Reservation</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="comments.html">Comments</a>
+          </li>
+      </ul>
+    </div>
+  </nav>
 
-<h2>[group name] Resort offers a special lodging experience on the New Jersey Eastern Coast</h2>
+
+<div class="container">
+<div><h2>Mohammed Uddin's Resort offers a special lodging experience on the New Jersey Eastern Coast</h2></div>
+
 <div class="relist">
     <h2>Relax in serenity with Panoramic views of the Atlantic Ocean</h2>
     <ul>
-        <li>Private yurts with decks overlooking the ocean</li>
-        <li>Activities lodge with fireplace and gift shop</li>
-        <li>Nightly fine dining at the Overlooking Cafe</li>
-        <li>Heated outdoor pool and whirlpool</li>
-        <li>Guided hiking tour of the redwoods</li>
+        <li><h4>Private yurts with decks overlooking the ocean</h4></li>
+        <li><h4>Activities lodge with fireplace and gift shop</h4></li>
+        <li><h4>Nightly fine dining at the Overlooking Cafe</h4></li>
+        <li><h4>Heated outdoor pool and whirlpool</h4></li>
+        <li><h4>Guided hiking tour of the redwoods</h4></li>
     </ul>
 </div>
 
 <div class="contect">
-    <p>[group name]</p>
+    <p>Mohammed Uddin's Resort</p>
     <p>One Normal Ave, Montclair</p>
     <p>New Jersey 07003</p>
     <p>973-655-4166</p>
 </div>
 
+</div>
 </body>
 <footer class="footer">
     <p>Copyright &copy 2023 [group name]</p>
-    <p>email: [group name]@mail.montclair.edu</p>
+    <p>email: MohammedUddin'sResort@mail.montclair.edu</p>
 
 </footer>
