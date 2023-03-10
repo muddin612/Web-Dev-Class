@@ -24,8 +24,9 @@
             text-decoration: none;
         }
         .navbar li a:hover{
-            background-color: #111;
+            background-color: rgb(108, 167, 122);
         }
+
         footer{
             position: auto;
             left: 0;
@@ -35,6 +36,8 @@
             width: 100%;
             color: lightgrey;
         }
+
+        
     </style>
 </head>
 <body>
@@ -69,120 +72,76 @@
     </div>
   </nav>
 
- <div class="container">
+  <div class="container">
     <h2>Reservation at Mohammed Uddin's Resort</h2>
     <form class="form-horizontal">
-
-    <div class="form-group">
+  
+      <div class="row form-group">
         <label class="control-label col-sm-2" for="first_name">First Name</label>
-            <div class="col-sm-10">
-            <input type="text" class="form-control" id="first_name" name="first_name" autofocus required>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="first_name" name="first_name" autofocus width="100%" required>
         </div>
-    </div>
-
-    <div class="form-group">
-        <label class="control-label col-sm-2" for="last_name">Last Name </label>
-            <div class="col-sm-10">
-              <input type="text" class="form-control" id="last_name" name="last_name" required>
-            </div>
-    </div>
-
-    <div class="form-group"></div>
-        <label class="control-label col-sm-2" for="number_street">Number & Street:</label>
-            <div class="col-sm-10">
-                <input type="text" class="form-control" id="number_street" name="number_street" required>
-            </div>
-    </div>
-    
-    <div class="form-group"></div>
+      </div>
+  
+      <div class="row form-group">
+        <label class="control-label col-sm-2" for="last_name">Last Name</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="last_name" name="last_name" required style="width: 100%;">
+        </div>
+      </div>
+  
+      <div class="row form-group">
+        <label class="control-label col-sm-2" for="number_street">Number &amp; Street:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="number_street" name="number_street" required>
+        </div>
+      </div>
+  
+      <div class="row form-group">
         <label class="control-label col-sm-2" for="City">City:</label>
-            <div class="col-sm-10">
-                <input type="text" class="form-control" id="City" name="City" required>
-            </div>
-    </div>
-    
-    <div class="form-group"></div>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="City" name="City" required>
+        </div>
+      </div>
+  
+      <div class="row form-group">
         <label class="control-label col-sm-2" for="Zip_Code">Zip Code:</label>
-            <div class="col-sm-10">
-                <input type="number" class="form-control" id="Zip Code" name="Zip_Code" required>
-            </div>
-    </div>
-
-    <div class="form-group"></div>
+        <div class="col-sm-10">
+          <input type="number" class="form-control" id="Zip_Code" name="Zip_Code" required>
+        </div>
+      </div>
+  
+      <div class="row form-group">
         <label class="control-label col-sm-2" for="Check-in_Date">Check-in Date:</label>
-            <div class="col-sm-10">
-                <input type="date" class="form-control" id="Check-in Date" name="Check-in_Date" required>
-            </div>
-    </div>
-
-    <div class="form-group"></div>
+        <div class="col-sm-10">
+          <input type="date" class="form-control" id="Check-in_Date" name="Check-in_Date" required>
+        </div>
+      </div>
+  
+      <div class="row form-group">
         <label class="control-label col-sm-2" for="Check-out_Date">Check-out Date:</label>
-            <div class="col-sm-10">
-                <input type="date" class="form-control" id="Check-out_Date" name="Check-out_Date" required>
-            </div>
-    </div>
+        <div class="col-sm-10">
+          <input type="date" class="form-control" id="Check-out_Date" name="Check-out_Date" required>
+        </div>
+      </div>
 
-    <div class="form-group"></div>
+      <div class="row form-group">
         <label class="control-label col-sm-2" for="Number_People">Number of People:</label>
-            <div class="col-sm-10">
-                <input type="number" class="form-control" id="Number_People" name="Number_People" required>
-            </div>
-    </div>
+        <div class="col-sm-10">
+          <input type="number" class="form-control" id="Number_People" name="Number_People" required>
+        </div>
+      </div>
 
-    <div class="form-group"></div>
-        <label class="control-label col-sm-2" for="Room_Type">Room Type:</label>
-            <div class="col-sm-10">
-                <select class="form-control" id="Room_Type" name="Room_Type" required>
-                    <option>King</option>
-                    <option>Queen</option>
-                    <option>Suit</option>
-                </select>
-            </div>
-    </div>
-    
-     <div class="form-group"></div>
-        <label class="control-label col-sm-2" for="Phone_Number">Phone Number:</label>
-            <div class="col-sm-10">
-                <input type="tel" class="form-control" id="Phone_Number" name="Phone_Number" placeholder="(###) ###-####" required>
-             </div>
-    </div>
-
-    <div class="form-group"></div>
-        <label class="control-label col-sm-2" for="E-mail_Address">E-mail Address:</label>
-            <div class="col-sm-10">
-                <input type="email" class="form-control" id="E-mail_Address" name="E-mail_Address" placeholder="name@domain.com" required>
-            </div>
-    </div>
-
-    <div class="form-group"></div>
-        <label class="control-label col-sm-2" for="Payment_Method">Payment Method:</label>
-            <div class="col-sm-10">
-                <select class="form-control" id="Payment_Method" name="Payment_Method" required>
-                    <option>MasterCard</option>
-                    <option>Visa</option>
-                    <option>American Express</option>
-                    <option>Discover</option>
-                </select>
-            </div>
-    </div>
-
-    <div class="form-group"></div>
-        <label class="control-label col-sm-2" for="Card_Number">Card Number:</label>
-            <div class="col-sm-10">
-                <input type="number" class="form-control" id="Card_Number" name="Card_Number" required>
-            </div>
-    </div>
-
-    <div class="form-group"></div>
-        <label class="control-label col-sm-2" for="Special_Request">Special_Request:</label>
-            <div class="col-sm-10">
-                <input type="textbox" class="form-control" id="Special_Request" name="Special_Request" required>
-            </div>
-    </div>
-      
+  
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" class="btn btn-primary">Reserve</button>
+        </div>
+      </div>
+  
     </form>
-
- </div>
+  </div>
+  
 
 </body>
 <footer class="footer">
