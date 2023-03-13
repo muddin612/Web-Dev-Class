@@ -132,12 +132,91 @@
         </div>
       </div>
 
-  
-      <div class="form-group">
-        <div class="col-sm-offset-2 col-sm-10">
-          <button type="submit" class="btn btn-primary">Reserve</button>
+      <div class="row form-group">
+        <label class="control-label col-sm-2" for="Room_Type">Room Type:</label>
+        <div class="col-sm-10">
+            <select class="form-control" id="Room_Type" name="Room_Type" required>
+                <option value=""></option>
+                <option value="king">King</option>
+                <option value="queen">Queen</option>
+                <option value="suit">Suit</option>
+
+            </select>
         </div>
-      </div>
+    </div>
+
+    <div class="row form-group">
+        <label class="control-label col-sm-2" for="Phone">Phone:</label>
+        <div class="col-sm-10">
+            <input type="tel" class="form-control" id="Phone" name="Phone" placeholder="(###)###-####"
+                pattern="([0-9]{3})-[0-9]{3}-[0-9]{4}" required>
+        </div>
+    </div>
+
+    <div class="row form-group">
+        <label class="control-label col-sm-2" for="Email_Address">Email Address:</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control" id="Email_Address" name="Email_Address"
+                placeholder="name@domain.com" required>
+        </div>
+    </div>
+
+    <div class="row form-group">
+        <label class="control-label col-sm-2" for="Payment_Method">Payment Method:</label>
+        <div class="col-sm-10">
+            <select class="form-control" id="Payment_Method" name="Payment_Method" required>
+                <option value=""></option>
+                <option value="amex">AMEX</option>
+                <option value="visa">VISA</option>
+                <option value="mc">MC</option>
+                <option value="discover">Discover</option>
+
+
+            </select>
+        </div>
+    </div>
+
+
+    <div class="row form-group">
+        <label class="control-label col-sm-2" for="Card_Number">Card Number:</label>
+        <div class="col-sm-10">
+            <input type="number" class="form-control" id="Card_Number" name="Card_Number" required>
+        </div>
+    </div>
+
+
+
+    <div class="row form-group">
+        <label class="control-label col-sm-2" for="Special_Requests">Special Requests:</label>
+        <div class="col-sm-10">
+            <textarea class="form-control" id="Special_Requests" name="Special_Requests" rows="4" cols="36"
+                required></textarea>
+        </div>
+    </div>
+
+
+    <table>
+        <tr>
+
+            <th style="width:20%">
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-primary">Reserve a
+                            room</button>
+                    </div>
+                </div>
+            </th>
+            <th style="width:60%">
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="clear" class="btn btn-primary"
+                            style="background-color:green">Clear</button>
+                    </div>
+                </div>
+
+            </th>
+        </tr>
+    </table>
   
     </form>
   </div>
