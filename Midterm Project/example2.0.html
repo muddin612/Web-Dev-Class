@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thank You</title>
+</head>
+<body>
+	<h1>Thank You for Your Message</h1>
+	
+	<ul>
+		<li><strong>Name:</strong> <span id="name-output"></span></li>
+		<li><strong>Email:</strong> <span id="email-output"></span></li>
+		<li><strong>Message:</strong> <span id="message-output"></span></li>
+	</ul>
+	
+	<script>
+		document.getElementById('name-output').textContent = sessionStorage.getItem('name');
+		document.getElementById('email-output').textContent = sessionStorage.getItem('email');
+		document.getElementById('message-output').textContent = sessionStorage.getItem('message');
+	</script>
+</body>
+</html>

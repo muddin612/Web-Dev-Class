@@ -7,6 +7,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="submitForm.js"></script>
     <style>
         .navbar{
             list-style-type: none;
@@ -25,6 +26,16 @@
         }
         .navbar li a:hover{
             background-color: rgb(108, 167, 122);
+        }
+        .gname{
+          margin: auto;
+          width: 50%;
+          padding: 1px;
+        }
+        .gname h1{
+          text-align: center;
+          text-shadow: 1px 5px 8px;
+          font-family:Arial, Helvetica, sans-serif;
         }
 
         footer{
@@ -74,7 +85,7 @@
 
   <div class="container">
     <h2>Reservation at Mohammed Uddin's Resort</h2>
-    <form class="form-horizontal">
+    <form class="form-horizontal" onsubmit="return submitForm()" action="thankyou.html">
   
       <div class="row form-group">
         <label class="control-label col-sm-2" for="first_name">First Name</label>
@@ -148,8 +159,7 @@
     <div class="row form-group">
         <label class="control-label col-sm-2" for="Phone">Phone:</label>
         <div class="col-sm-10">
-            <input type="tel" class="form-control" id="Phone" name="Phone" placeholder="(###)###-####"
-                pattern="([0-9]{3})-[0-9]{3}-[0-9]{4}" required>
+            <input type="tel" class="form-control" id="Phone" name="Phone" placeholder="(###) ###-####"   required>
         </div>
     </div>
 
@@ -180,7 +190,7 @@
     <div class="row form-group">
         <label class="control-label col-sm-2" for="Card_Number">Card Number:</label>
         <div class="col-sm-10">
-            <input type="number" class="form-control" id="Card_Number" name="Card_Number" required>
+            <input type="number" class="form-control" id="Card_Number" name="Card_Number"  " required>
         </div>
     </div>
 
