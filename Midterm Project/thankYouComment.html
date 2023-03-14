@@ -7,9 +7,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="submitform2.0.js"></script>
     <style>
-        body{
+      body{
           position: relative;
           height: 100%;
           padding-bottom: 5rem;
@@ -30,7 +29,7 @@
             text-decoration: none;
         }
         .navbar li a:hover{
-            background-color:rgb(108, 167, 122);
+            background-color: rgb(108, 167, 122);
         }
         .gname{
           margin: auto;
@@ -51,15 +50,45 @@
             width: 100%;
             color: lightgrey;
         }
+
+        .thx li{
+            display: flex;
+            justify-content: space-between;
+            margin-right: 30%;
+            margin: 2%;
+            text-align: center;
+            font-size: large;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration:none;
+            height: 100%;
+        }
+        .thx .one{
+            background-color: lightgray;
+            width: 100%;
+            height: 40px;
+            text-align: center;
+            align-items: center;
+        }
+        .thx .two{
+            background-color: rgb(223, 223, 223);
+            width: 100%;
+            height: 40px;
+            text-align: center;
+            align-items: center;
+        }
+        .thx p{
+            font-size: 20px;
+            margin: 1%;
+        }
+        
     </style>
 </head>
 <body>
-    <div class="gname"><h1>Syrian Slayers's Resort</h1></div>
-
+<div class="gname"><h1>Syrian Slayers's Resort</h1></div>
 
 <nav class="navbar navbar-expand-md navbar-dark">
     <a class="navbar-brand" href="index.html">
-        <img src="comsci.png" alt="logo" height="100px">
+        <img src="comsci.png" alt="logo" height="50px">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
@@ -84,53 +113,16 @@
       </ul>
     </div>
   </nav>
+  <div class="thx">
 
-  <h3>We treasure your comments</h3>
+    <h1>Dear, <span id="output"> </span></span> thank you for your comment.</h1>
+  </div>
 
-    <form class="form-horizontal" onsubmit="return submitForm()" action="thankYouComment.html">
+  <script>
+    document.getElementById('output').textContent = sessionStorage.getItem('input');
+</script>
 
-        <div class="row form-group">
-            <label class="control-label col-sm-2" for="name">Name</label>
-            <div class="col-sm-10">
-                <input type="text" class="form-control" id="name" name="name" autofocus width="100%">
-            </div>
-        </div>
-
-        <div class="row form-group">
-            <label class="control-label col-sm-2" for="name">Phone:</label>
-            <div class="col-sm-10">
-                <input type="number" class="form-control" id="phone" name="phone" autofocus width="100%">
-            </div>
-        </div>
-
-        <div class="row form-group">
-            <label class="control-label col-sm-2" for="email_address">E-mail Address:</label>
-            <div class="col-sm-10">
-                <input type="email" class="form-control" id="email_address" name="email_address" autofocus width="100%"
-                    placeholder="name@domain.com">
-            </div>
-        </div>
-
-        <div class="row form-group">
-            <label class="control-label col-sm-2" for="comments">Your Comments</label>
-            <div class="col-sm-10">
-                <textarea class="form-control" id="comments" name="comments" rows="4" cols="90"></textarea>
-            </div>
-        </div>
-
-
-        <div class="form-group">
-            <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-primary">Submit Comments</button>
-            </div>
-        </div>
-
-
-    </form>
-
-
-
-
+  
 
 </body>
 <footer class="footer">
